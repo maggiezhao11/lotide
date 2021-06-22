@@ -4,8 +4,7 @@ const assertEqual = function(actual, expected) {
   let message = "";
   if (actual === expected) {
     message = `✅✅✅Assertion Passed: ${actual} === ${expected}`;
-  }  
-   else {
+  } else {
     message = `🔴🔴🔴Assertion Passed: ${actual} !== ${expected}`;
   } return message;
 
