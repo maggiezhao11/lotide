@@ -1,7 +1,7 @@
 const eqArrays = function(array1,array2) {
-  if (array1.length !== array2.length){
+  if (array1.length !== array2.length) {
     return false;
-  };
+  }
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
       console.log([array1[i],array2[i]]);
@@ -24,13 +24,13 @@ const assertArraysEqual = function(actual, expected) {
 
 let middle = function(array) {
   let output = [];
-  if(array.length<=2){
+  if (array.length <= 2) {
     return [];
   } else if (array.length % 2 === 1) {
     output = [array[Math.floor(array.length / 2)]];
   } else {
     output = [array[Math.floor((array.length - 1) / 2)] , array[Math.floor(array.length / 2)]];
-  } return output
+  } return output;
 };
 console.log(middle([1]));
 console.log(middle([1, 2]));
