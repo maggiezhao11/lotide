@@ -14,12 +14,13 @@ const assertEqual = function(actual, expected) {
 const words = ["yo yo", "Lighthouse", "Labs"];
 
 let tail = function(array, expected) {
-  let empty = array.slice(1);
-
-  for (let i = 0; i < empty.length; i++) {
-    console.log(empty[i], expected[i]);
-    if (empty[i] !== expected[i]) {
-      return assertEqual(1, 2);
+  if (array.length >= 2) {
+    let empty = array.slice(1);
+    for (let i = 0; i < empty.length; i++) {
+      console.log(empty[i], expected[i]);
+      if (empty[i] !== expected[i]) {
+        return assertEqual(1, 2);
+      }
     }
   }
   return assertEqual(1, 1);
